@@ -1,11 +1,15 @@
-scalaVersion := "2.10.3"
+scalaVersion := "2.11.8"
 
 name := "scala-xml-printing"
 
-version := "0.9"
+enablePlugins(GitVersioning)
 
-organization := "com.v"
+organization := "com.scalawilliam"
 
-libraryDependencies += "org.scala-lang" % "scala-reflect" % "2.10.3"
+libraryDependencies += "org.scala-lang" % "scala-reflect" % "2.11.8"
 
-libraryDependencies += "org.scalatest" % "scalatest_2.10" % "2.0" % "test"
+libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "1.0.6"
+
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.0" % Test
+
+libraryDependencies += "xmlunit" % "xmlunit" % "1.6" % Test
