@@ -15,3 +15,5 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.0" % Test
 libraryDependencies += "xmlunit" % "xmlunit" % "1.6" % Test
 
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+
+git.useGitDescribe := true
